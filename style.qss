@@ -1,0 +1,160 @@
+/* ===== 全局标题样式 ===== */
+QLabel#label_title, QLabel#label_3, QLabel#label_2, QLabel#label{
+    color: #37ff4e;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* ===== 标题栏电池图标 ===== */
+QLabel#label_dianchi{
+    image: url(:/icons/dianchi.png);
+}
+
+/* ===== 状态点（绿/红圆点） ===== */
+QLabel#label_link_dot, QLabel#label_ms_dot{
+    min-width: 12px;
+    max-width: 12px;
+    min-height: 12px;
+    max-height: 12px;
+    border-radius: 6px;
+    background-color: #37ff4e;
+}
+QLabel[status="off"]{
+    background-color: #ff4e4e;
+}
+
+/* ===== 按钮颜色 ===== */
+QPushButton#btn_open{
+    background-color: #2d8cf0;   /* 也可改为绿色 #19be6b */
+    color: white;
+    border-radius: 4px;
+    padding: 4px 16px;
+}
+QPushButton#btn_open:hover{ background-color: #57a8f8; }
+
+QPushButton#btn_close{
+    background-color: #ed3f14;
+    color: white;
+    border-radius: 4px;
+    padding: 4px 16px;
+}
+QPushButton#btn_close:hover{ background-color: #ff6347; }
+
+/* ===== 工具栏标签 ===== */
+QLabel#label_port, QLabel#label_baud, QLabel#label_frame{
+    color: #555;
+    font-size: 25px;
+}
+
+/* ===== 单体电压（用属性选择器一次性匹配所有 cell_*） ===== */
+QLabel[objectName^="cell_"]{
+    color: #37ff4e;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    padding: 6px 8px;
+    background: #fafafa;
+}
+
+/* ===== 系统状态数值 ===== */
+QLabel#val_total_v, QLabel#val_total_i, QLabel#val_soc,
+QLabel#val_charge, QLabel#val_temp, QLabel#val_insulation{
+    color: #37ff4e;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* ===== SOC 进度条 ===== */
+QProgressBar#progress_soc{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f0f0f0;
+    height: 10px;
+    text-align: center;
+}
+QProgressBar#progress_soc::chunk{
+    background-color: #37ff4e;
+    border-radius: 3px;
+}
+
+/* ===== GroupBox 标题样式 ===== */
+QGroupBox{
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+QGroupBox::title{
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 6px;
+    left: 10px;
+}
+
+/* ===== CAN 报文表格 ===== */
+QTableWidget#table_can{
+    gridline-color: #e0e0e0;
+    background: white;
+    alternate-background-color: #f7f9fc;
+    selection-background-color: #2d8cf0;
+    selection-color: white;
+}
+QHeaderView::section{
+    background-color: #2d8cf0;
+    color: white;
+    padding: 6px;
+    border: none;
+    font-weight: bold;
+}
+QTableWidget#table_can QTableCornerButton::section{
+    background-color: #2d8cf0;
+    border: none;
+}
+
+/* ===== 通信日志 ===== */
+QPlainTextEdit#text_log{
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    border: 1px solid #333;
+    font-family: "Consolas";
+    font-size: 10pt;
+    selection-background-color: #264f78;
+}
+
+/* 垂直滚动条 */
+QScrollBar:vertical {
+    width: 10px;
+    background: transparent;
+    margin: 0px;
+}
+
+/* 滑块 */
+QScrollBar::handle:vertical {
+    background: rgba(91, 91, 91, 50%);
+    border-radius: 5px;
+    min-height: 20px;
+    border: none;
+}
+
+/* 鼠标悬停 */
+QScrollBar::handle:vertical:hover {
+    background: rgba(91, 91, 91, 100%);
+}
+
+/* 隐藏上下箭头 */
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+    background: none;
+}
+
+/* 隐藏点击空白处时的矩形框 */
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: none;
+}
+
