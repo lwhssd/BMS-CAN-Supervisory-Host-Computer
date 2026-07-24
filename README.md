@@ -82,7 +82,7 @@ nmake         # MSVC
 
 ## 界面布局
 
-![](D:\Qt_projects\BMS\BMS\1784888587811.png)
+![](.\1784888587811.png)
 
 ## BMS 通信协议
 
