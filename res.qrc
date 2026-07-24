@@ -2,5 +2,6 @@
     <qresource prefix="/">
         <file>style.qss</file>
         <file>icons/dianchi.png</file>
+        <file>icons/shuaxin.png</file>
     </qresource>
 </RCC>

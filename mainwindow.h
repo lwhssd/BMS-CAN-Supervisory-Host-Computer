@@ -5,6 +5,10 @@
 #include <QHBoxLayout>
 #include <QDebug>
 #include <QLabel>
+#include <QSerialPort>
+#include <QSerialPortInfo>
+#include <QPlainTextEdit>
+#include <QString>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -16,7 +20,11 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(QWidget *parent = nullptr);
+    void refreshSerialPorts();
     ~MainWindow();
+
+private slots:
+    void on_btn_refrsh_clicked();
 
 private:
     Ui::MainWindow *ui;

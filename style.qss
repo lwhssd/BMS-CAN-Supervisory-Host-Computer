@@ -10,6 +10,10 @@ QLabel#label_dianchi{
     image: url(:/icons/dianchi.png);
 }
 
+QPushButton#btn_refrsh{
+    border-image: url(:/icons/shuaxin.png);
+}
+
 /* ===== 状态点（绿/红圆点） ===== */
 QLabel#label_link_dot, QLabel#label_ms_dot{
     min-width: 12px;
