@@ -1,6 +1,6 @@
 /* ===== 全局标题样式 ===== */
 QLabel#label_title, QLabel#label_3, QLabel#label_2, QLabel#label{
-    color: #37ff4e;
+    color: #43bdff;
     font-size: 25px;
     font-weight: bold;
 }
@@ -15,7 +15,7 @@ QPushButton#btn_refrsh{
 }
 
 /* ===== 状态点（绿/红圆点） ===== */
-QLabel#label_link_dot, QLabel#label_ms_dot{
+QLabel#label_link_dot{
     min-width: 12px;
     max-width: 12px;
     min-height: 12px;
@@ -23,7 +23,7 @@ QLabel#label_link_dot, QLabel#label_ms_dot{
     border-radius: 6px;
     background-color: #37ff4e;
 }
-QLabel[status="off"]{
+QLabel#label_link_dot[status="off"]{
     background-color: #ff4e4e;
 }
 
@@ -53,7 +53,7 @@ QLabel#label_port, QLabel#label_baud, QLabel#label_frame{
 /* ===== 单体电压（用属性选择器一次性匹配所有 cell_*） ===== */
 QLabel[objectName^="cell_"]{
     color: #37ff4e;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     border: 1px solid #e0e0e0;
     border-radius: 3px;
